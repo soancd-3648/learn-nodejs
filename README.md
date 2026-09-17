@@ -26,7 +26,7 @@ npm run start:dev
 - API: `http://localhost:3000/api/v1`
 - Swagger: `http://localhost:3000/api/docs`
 - Mailpit: `http://localhost:8025`
-- Tài khoản seed mặc định: `admin@eventhub.local` / `Admin123!` (hãy đổi qua biến môi trường khi dùng ngoài local).
+- Tài khoản seed mặc định: `admin@eventhub.local` / `Admin123!`
 
 ## Kiểm tra
 
@@ -37,18 +37,8 @@ npm test
 npm run test:e2e
 ```
 
-## Quyết định performance
-
-- Endpoint danh sách luôn phân trang và giới hạn tối đa 100 bản ghi.
-- Index ghép cho `events(status, start_at)`, `registrations(event_id, status)` và audit log.
-- Giữ tồn kho vé bằng transaction + row lock, chống overselling; `idempotencyKey` chống tạo trùng do retry.
-- Query dùng projection/join có chủ đích; export được thiết kế theo hướng stream.
-- Cron lấy dữ liệu theo cửa sổ thời gian và đánh dấu `reminder_sent_at` để tránh gửi lặp.
-
 ## Seeder CLI
 
 ```bash
 SEED_ADMIN_EMAIL=mentor@example.com SEED_ADMIN_PASSWORD='StrongPassword!' npm run seed
 ```
-
-Seeder dùng `upsert` cho category và không tạo trùng admin.
