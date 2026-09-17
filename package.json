@@ -1,5 +1,5 @@
 {
-  "name": "eventhub-api",
+  "name": "learn-nodejs",
   "version": "1.0.0",
   "private": true,
   "description": "Production-style NestJS API for event management and ticket registration",

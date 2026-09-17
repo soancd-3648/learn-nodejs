@@ -1,6 +1,6 @@
-# EventHub API
+# Learn Node.js
 
-NestJS backend cho hệ thống quản lý sự kiện và đăng ký vé. Requirement chi tiết nằm ở sheet `12. EventHub` trong [workbook dự án](https://docs.google.com/spreadsheets/d/1m4NMX9oGUpUFbsivkiHsBZC36kQbhkM8UzLo_Uy2bbA/edit#gid=2036145347).
+Dự án học Node.js/NestJS thông qua bài toán EventHub — hệ thống quản lý sự kiện và đăng ký vé. Requirement chi tiết nằm ở sheet `12. EventHub` trong [workbook dự án](https://docs.google.com/spreadsheets/d/1m4NMX9oGUpUFbsivkiHsBZC36kQbhkM8UzLo_Uy2bbA/edit#gid=2036145347).
 
 ## Thành phần chính
 
