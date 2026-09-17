@@ -1,0 +1,15 @@
+export enum AuditAction {
+  UserUpdated = 'USER_UPDATED',
+  UserProfileUpdated = 'USER_PROFILE_UPDATED',
+  UserAvatarUpdated = 'USER_AVATAR_UPDATED',
+  CategoryCreated = 'CATEGORY_CREATED',
+  CategoryUpdated = 'CATEGORY_UPDATED',
+  CategoryDeleted = 'CATEGORY_DELETED',
+  EventCreated = 'EVENT_CREATED',
+  EventUpdated = 'EVENT_UPDATED',
+  EventPublished = 'EVENT_PUBLISHED',
+  EventCoverUpdated = 'EVENT_COVER_UPDATED',
+  RegistrationCreated = 'REGISTRATION_CREATED',
+  RegistrationCancelled = 'REGISTRATION_CANCELLED',
+  TicketCheckedIn = 'TICKET_CHECKED_IN',
+}
